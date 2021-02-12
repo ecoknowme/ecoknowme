@@ -23,11 +23,11 @@ flask-share
 gunicorn
 pygeoip
 requests
-pdfkit
 stripe
 pyopenssl
 cryptography
 configobj
 subprocess.run
 lib-platform
-git+git://github.com/johnfraney/wkhtmltopdf-pack.git
+wkhtmltopdf-pack==0.12.3.0 
+pdfkit==0.6.0
