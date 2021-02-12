@@ -29,3 +29,4 @@ pyopenssl
 cryptography
 configobj
 wkhtmltopdf
+git+git://github.com/johnfraney/wkhtmltopdf-pack.git
