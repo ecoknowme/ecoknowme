@@ -30,6 +30,5 @@ cryptography
 configobj
 subprocess.run
 lib-platform
-os
 os-sys
 git+git://github.com/johnfraney/wkhtmltopdf-pack.git
