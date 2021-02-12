@@ -23,7 +23,6 @@ flask-share
 gunicorn
 pygeoip
 requests
-json
 pdfkit
 stripe
 pyopenssl
