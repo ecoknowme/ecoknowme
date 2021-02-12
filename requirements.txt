@@ -29,6 +29,7 @@ pyopenssl
 cryptography
 configobj
 subprocess.run
-platform
+lib-platform
 os
+os-sys
 git+git://github.com/johnfraney/wkhtmltopdf-pack.git
