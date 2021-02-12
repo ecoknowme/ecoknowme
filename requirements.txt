@@ -29,5 +29,4 @@ cryptography
 configobj
 subprocess.run
 lib-platform
-wkhtmltopdf-pack
 pdfkit
