@@ -12,9 +12,11 @@ import json
 import pdfkit
 import stripe, os,sys, subprocess, platform
 
-WKHTMLTOPDF_CMD = subprocess.Popen(['which', os.environ.get('WKHTMLTOPDF_BINARY', 'wkhtmltopdf')], stdout=subprocess.PIPE).communicate()[0].strip()
-config=pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_CMD)
-
+#WKHTMLTOPDF_CMD = subprocess.Popen(['which', os.environ.get('WKHTMLTOPDF_BINARY', 'wkhtmltopdf')], stdout=subprocess.PIPE).communicate()[0].strip()
+#config=pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_CMD)
+os.environ['PATH'] += os.pathsep + os.path.dirname(sys.executable) 
+WKHTMLTOPDF_CMD = subprocess.Popen(['which', os.environ.get('WKHTMLTOPDF_BINARY', 'wkhtmltopdf')],stdout=subprocess.PIPE).communicate()[0].strip()
+config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_CMD)
 #config=pdfkit.configuration(wkhtmltopdf=r'.\flaskblog\bin\wkhtmltopdf.exe')
 buplishable_key ='pk_test_51IJhisCvsB7CERUXznrhAbCUHPmY1WDcqwnseIFRVLWiQHs49EgchoODlorCmpCkYnKOx4CtyPOJeNTEx7ksU8bS00Am5A3LR4'
 stripe.api_key ='sk_test_51IJhisCvsB7CERUX2Gq7tiMiSMT2VecnDuc5mlfPp3bbGaWHGpfmbTgJ6OimECeEQ1C8Tw2HD84q5iNS1JZKSkMr00iXJwgdXx'
