@@ -10,7 +10,7 @@ from flaskblog.users.utils import save_pro_picture
 import secrets
 import json
 import pdfkit
-import stripe, os
+import stripe, os,sys, subprocess, platform
 
 WKHTMLTOPDF_CMD = subprocess.Popen(['which', os.environ.get('WKHTMLTOPDF_BINARY', 'wkhtmltopdf')], stdout=subprocess.PIPE).communicate()[0].strip()
 config=pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_CMD)
