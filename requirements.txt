@@ -28,8 +28,7 @@ stripe
 pyopenssl
 cryptography
 configobj
-wkhtmltopdf
-subprocess
+subprocess.run
 platform
 os
 git+git://github.com/johnfraney/wkhtmltopdf-pack.git
